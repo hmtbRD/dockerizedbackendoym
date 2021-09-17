@@ -1,0 +1,10 @@
+version: "3"
+
+# More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
+services:
+  pihole:
+    container_name: oymserver
+    image: hmtbrd/oymalpineserver
+    ports:
+      - "80:8080/tcp"
+    restart: unless-stopped
